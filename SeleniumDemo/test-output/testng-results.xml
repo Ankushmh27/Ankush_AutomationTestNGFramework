@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-29T16:36:39 IST" name="Default suite" finished-at="2023-11-29T16:36:39 IST" duration-ms="48">
+    <groups>
+    </groups>
+    <test started-at="2023-11-29T16:36:39 IST" name="Default test" finished-at="2023-11-29T16:36:39 IST" duration-ms="48">
+      <class name="demoTestNG.AnnotationTestNG">
+        <test-method is-config="true" signature="A()[pri:0, instance:demoTestNG.AnnotationTestNG@6fdbe764]" started-at="2023-11-29T16:36:39 IST" name="A" finished-at="2023-11-29T16:36:39 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method is-config="true" signature="C()[pri:0, instance:demoTestNG.AnnotationTestNG@6fdbe764]" started-at="2023-11-29T16:36:39 IST" name="C" finished-at="2023-11-29T16:36:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- C -->
+        <test-method is-config="true" signature="E()[pri:0, instance:demoTestNG.AnnotationTestNG@6fdbe764]" started-at="2023-11-29T16:36:39 IST" name="E" finished-at="2023-11-29T16:36:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- E -->
+        <test-method is-config="true" signature="G()[pri:0, instance:demoTestNG.AnnotationTestNG@6fdbe764]" started-at="2023-11-29T16:36:39 IST" name="G" finished-at="2023-11-29T16:36:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- G -->
+        <test-method signature="name()[pri:0, instance:demoTestNG.AnnotationTestNG@6fdbe764]" started-at="2023-11-29T16:36:39 IST" name="name" finished-at="2023-11-29T16:36:39 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- name -->
+        <test-method is-config="true" signature="H()[pri:0, instance:demoTestNG.AnnotationTestNG@6fdbe764]" started-at="2023-11-29T16:36:39 IST" name="H" finished-at="2023-11-29T16:36:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- H -->
+        <test-method is-config="true" signature="F()[pri:0, instance:demoTestNG.AnnotationTestNG@6fdbe764]" started-at="2023-11-29T16:36:39 IST" name="F" finished-at="2023-11-29T16:36:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- F -->
+        <test-method is-config="true" signature="D()[pri:0, instance:demoTestNG.AnnotationTestNG@6fdbe764]" started-at="2023-11-29T16:36:39 IST" name="D" finished-at="2023-11-29T16:36:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- D -->
+        <test-method is-config="true" signature="B()[pri:0, instance:demoTestNG.AnnotationTestNG@6fdbe764]" started-at="2023-11-29T16:36:40 IST" name="B" finished-at="2023-11-29T16:36:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B -->
+      </class> <!-- demoTestNG.AnnotationTestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

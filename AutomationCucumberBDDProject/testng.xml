@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	  <test name="runner class" >
+		<classes>
+			<class name="com.runner.TestRunner" />
+		</classes>
+	</test>
+	 <!-- <test name=" Stepdef class">
+		<classes>
+			<class name="com.stepdefination.LoginSteps" />
+		</classes>
+	</test>-->
+	
+	
+	
+	<!-- Cross browser test-->
+	 <!-- <test name="Parallel Tests using firefox" parallel="classes">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.stepdefination.LoginSteps" />
+		</classes>
+	</test>
+
+	<test name="Parallel Tests using chrome" parallel="classes">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.stepdefination.LoginSteps" />
+		</classes>
+	</test>-->
+</suite> 
