@@ -5,11 +5,11 @@
     <listener class-name="com.Utilities.TestListener"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="edge"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.TestClass.SearchMobilesTest">
         <methods>
-          <include name="verifyMobiledata"/>
+          <include name="verifyMobiledata" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setupBrowser"/>
         </methods>

@@ -17,6 +17,9 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -73,7 +76,7 @@ public class utility extends baseSetup
 		Select select= new Select(dropdown);
 		select.selectByIndex(value);
 	}
-	
+
 	public void windowHandle(WebDriver driver, int index) throws Exception
 	{
 		String parentWindow = driver.getWindowHandle();
@@ -83,15 +86,15 @@ public class utility extends baseSetup
 		driver.switchTo().window(parentWindow);
 		driver.quit();
 	}
-	
+
 	public void frameHandle(WebDriver driver,WebElement frameElement, int index) throws Exception
 	{
 		String parentWindow = driver.getWindowHandle();
 		driver.switchTo().frame(frameElement);
-//		driver.switchTo().frame(index);
+		//		driver.switchTo().frame(index);
 		driver.switchTo().window(parentWindow);
 	}
-	
+
 	public void alertAccept(WebDriver driver) throws Exception
 	{
 		Alert alert = driver.switchTo().alert();
@@ -192,47 +195,4 @@ public class utility extends baseSetup
 		Date date = new Date();
 		return dateFormat.format(date);
 	}
-	
-	 public static Object[][] readTestData(String filePath, String sheetName) {
-	        try {
-	            FileInputStream fileInputStream = new FileInputStream(filePath);
-	            Workbook workbook = WorkbookFactory.create(fileInputStream);
-	            Sheet sheet = workbook.getSheet(sheetName);
-
-	            int rowCount = sheet.getLastRowNum();
-	            int colCount = sheet.getRow(0).getLastCellNum();
-
-	            Object[][] data = new Object[rowCount][colCount];
-
-	            for (int i = 1; i <= rowCount; i++) {
-	                Row row = sheet.getRow(i);
-	                for (int j = 0; j < colCount; j++) {
-	                    Cell cell = row.getCell(j, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK);
-
-	                    switch (cell.getCellType()) {
-	                        case STRING:
-	                            data[i - 1][j] = cell.getStringCellValue();
-	                            break;
-	                        case NUMERIC:
-	                            data[i - 1][j] = cell.getNumericCellValue();
-	                            break;
-	                        case BOOLEAN:
-	                            data[i - 1][j] = cell.getBooleanCellValue();
-	                            break;
-	                        case BLANK:
-	                            data[i - 1][j] = "";
-	                            break;
-	                        default:
-	                            throw new IllegalStateException("Unexpected value: " + cell.getCellType());
-	                    }
-	                }
-	            }
-
-	            return data;
-
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	            return null;
-	        }
-	    }
 }

@@ -61,8 +61,8 @@ public class AmazonHomePage extends utility
 	public void verifyMobile(String mobiles) throws AWTException, InterruptedException 
 	{
 		sendKey(search, mobiles);
-		sleep(500);
+		search.sendKeys(Keys.ENTER);
 		search.clear();
-		sleep(500);
+		sleep(1000);
 	}
 }

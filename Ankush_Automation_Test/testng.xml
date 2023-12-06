@@ -3,10 +3,11 @@
 <suite name="Suite">
 	<listeners>
 		<listener class-name="com.Utilities.TestListener" />
-	</listeners>
-	<test thread-count="5" name="Test">
-		<parameter name="browser" value="edge"></parameter>
+	</listeners> 
+	<test name="Test">
+		<parameter name="browser" value="chrome"></parameter>
 		<classes>
+			<class name="com.TestClass.amazonProductPriceTest" />
 			<class name="com.TestClass.SearchMobilesTest" />
 		</classes>
 	</test>
